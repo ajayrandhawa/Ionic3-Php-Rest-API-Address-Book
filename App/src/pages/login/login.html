@@ -1,0 +1,20 @@
+<ion-content no-padding no-margin>
+  <div id="loginup">
+      <img src="./assets/img/logo.png" style="width:45%;"/>
+  </div>
+  
+<ion-list class="list" inset>
+  <ion-item class="itemlogin">
+    <ion-input placeholder="Username" [(ngModel)]="userData.username"></ion-input>
+  </ion-item>
+  <ion-item class="itemlogin">
+    <ion-input placeholder="Password" type="password" [(ngModel)]="userData.password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <button ion-button round large no-padding no-margin style="background:#6a5085; color:#ffffff; font-family: Roboto; width:100%;" (click)="login()">
+          Login
+    </button>
+  </ion-item>
+</ion-list>
+<h6 style="text-align:center; color:#444444">Don't have account ? <span (click)="onregister()" style="text-decoration:underline;">Sign Up</span></h6>
+</ion-content>

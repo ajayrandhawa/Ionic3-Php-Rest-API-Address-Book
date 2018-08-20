@@ -1,0 +1,45 @@
+page-addcontact {
+    // map style
+    #map {
+        height: 250px;
+        width: 100%;
+        overflow: hidden!important;
+    }
+    .currentitem {
+        position: fixed;
+        opacity: .8;
+        top: 12rem;
+        left: 0;
+        z-index: 103;
+        width: 100%;
+        height: 50px;
+        .item-ios .item-inner {
+            background: none;
+            padding-right: 10px;
+        }
+    }
+    .hidemap {
+        visibility: hidden;
+        margin-top: -1000px;
+    }
+    .switch {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        width: 80%;
+        border-radius: 10px;
+        text-align: center;
+        z-index: 100;
+        opacity: .9;
+        .active {
+            background: #3366CC!important;
+            color: #fff;
+        }
+        .button {
+            width: 100px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

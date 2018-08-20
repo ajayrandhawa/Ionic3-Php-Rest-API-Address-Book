@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar>
+          <ion-buttons left menuToggle>
+              <button ion-button icon-only>
+                <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>
+              </button>
+          </ion-buttons>
+          <ion-title style="text-align:center">Hi' {{userDetails.fname}}</ion-title>
+        </ion-navbar>
+  </ion-header>
+
+<ion-content no-padding no-margin style="background: #f2f2f2;">
+
+          <ion-card class="datadic" *ngFor="let item of dataSet;">
+              <ion-card-header>
+                  {{item.fname}} {{item.lname}}
+              </ion-card-header>
+              <ion-card-content>
+                  <h6><b>Phone No.</b> : {{item.mnumber}}</h6><br>
+                  <h6><b>Address</b> : {{item.address}}</h6><br>
+                  <h6><b>Longitude</b> : {{item.lgt}}</h6><br>
+                  <h6><b>Latitude</b> : {{item.ltt}}</h6>
+              </ion-card-content>
+            </ion-card>
+
+</ion-content>

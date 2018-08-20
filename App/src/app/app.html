@@ -1,0 +1,44 @@
+<ion-menu [content]="content">
+    <ion-header>
+        <ion-item style="height:150px; background:#efeaea">
+          <img src="./assets/img/logo.png" style="margin:0 auto;  position:fixed; left:0; right:0; width:30%; top:30px"/>
+        </ion-item>
+    </ion-header>
+  
+    <ion-content style="position:fixed;">
+            <ion-list no-padding no-margin style="margin-top:50px;">
+                    <button ion-button clear no-padding no-margin (click)="onclickHome()" menuToggle>
+                        <ion-item no-lines class="menuitem">
+                          <ion-icon name="ios-home" ></ion-icon>
+                          &nbsp;&nbsp;
+                          <b>Home</b>
+                        </ion-item>
+                    </button>
+                  </ion-list>
+              
+                  <ion-list no-padding no-margin>
+                    <button ion-button clear no-padding no-margin (click)="onclickadd()" menuToggle>
+                        <ion-item no-lines class="menuitem">
+                          <ion-icon name="md-person-add" ></ion-icon>
+                          &nbsp;&nbsp;
+                          <b>Add Contact</b>
+                        </ion-item>
+                        </button>
+                  </ion-list>
+
+                  <ion-list no-padding no-margin>
+                        <button ion-button clear no-padding no-margin (click)="onclicklogout()" menuToggle>
+                            <ion-item no-lines class="menuitem">
+                              <ion-icon name="md-log-out" ></ion-icon>
+                              &nbsp;&nbsp;
+                              <b>Logout</b>
+                            </ion-item>
+                            </button>
+                      </ion-list>
+        <p style="position:fixed; bottom:0; padding:5px;">Copyright © 2017 (Ajay Randhawa)</p>
+    </ion-content>
+  
+  </ion-menu>
+  
+  <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+  <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-navbar>
+          <ion-buttons left menuToggle>
+              <button ion-button icon-only>
+                <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>
+              </button>
+          </ion-buttons>
+          <ion-title style="text-align:center">Add Contact</ion-title>
+        </ion-navbar>
+  </ion-header>
+<ion-content>
+  <br><br>
+
+    <ion-list class="list" inset>
+        <ion-item class="itemreg">
+          <ion-input placeholder="First Name" [(ngModel)]="userDataContact.fnameC" ng-required></ion-input>
+        </ion-item>
+        <ion-item class="itemreg">
+          <ion-input placeholder="Last Name" [(ngModel)]="userDataContact.lnameC" ng-required></ion-input>
+        </ion-item>
+        <ion-item class="itemreg">
+          <ion-input placeholder="Phone No." type="number" [(ngModel)]="userDataContact.mnumberC" ng-required></ion-input>
+        </ion-item>
+        <ion-item class="itemreg">
+          <ion-searchbar #searchbar placeholder="Search Address" [(ngModel)]="userDataContact.addressC" autocorrect="off" ng-required></ion-searchbar>
+  </ion-item>
+  <div id="map" #map></div>
+  <br>
+  <ion-item class="itemreg">
+    <ion-input placeholder="Longitude"  readonly [(ngModel)]="userDataContact.lgt" value={{userDataContact.lgt}}></ion-input>
+  </ion-item>
+  <ion-item class="itemreg">
+    <ion-input placeholder="Latitude"  readonly [(ngModel)]="userDataContact.ltt" value={{userDataContact.ltt}}></ion-input>
+  </ion-item>
+    <ion-item>
+      <button ion-button round large no-padding no-margin style="background:#6a5085; color:#ffffff; font-family: Roboto; width:100%;"
+        (click)="onsave()">
+            Save
+      </button>
+    </ion-item>
+  </ion-list>
+</ion-content>

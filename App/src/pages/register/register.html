@@ -1,0 +1,27 @@
+<ion-content no-padding no-margin>
+  <div id="regup">
+    <img src="./assets/img/logo.png" style="width:35%;" />
+  </div>
+
+  <ion-list class="list" inset>
+    <ion-item class="itemreg">
+      <ion-input placeholder="First Name" [(ngModel)]="userData.fname"></ion-input>
+    </ion-item>
+    <ion-item class="itemreg">
+      <ion-input placeholder="Last Name" [(ngModel)]="userData.lname"></ion-input>
+    </ion-item>
+    <ion-item class="itemreg">
+      <ion-input placeholder="Username" [(ngModel)]="userData.username"></ion-input>
+    </ion-item>
+    <ion-item class="itemreg">
+      <ion-input placeholder="Password" type="password" [(ngModel)]="userData.password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <button ion-button round large no-padding no-margin style="background:#6a5085; color:#ffffff; font-family: Roboto; width:100%;"
+        (click)="signup()">
+            Register
+      </button>
+    </ion-item>
+  </ion-list>
+  <h6 style="text-align:center; color:#444444">Already registered! <span (click)="onlogin()" style="text-decoration:underline;">Login</span></h6>
+</ion-content>
