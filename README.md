@@ -19,5 +19,5 @@ Ionic3 Php Rest API Address Book is developed in Ionic3 Angular4 & Php Slim Rest
 #### Wireframing
 
 
-<img src="wireframe.png" alt="wireframe">
+<img src="wireframes.png" alt="wireframe">
 
