@@ -30,7 +30,7 @@ Ionic3 Php Rest API Address Book is developed in Ionic3 Angular4 & Php Slim Rest
 2. Edit Server API URL in src/providers/auth-service.ts
 3. Copy Backend Folder in Xammp (Apache Server).
 4. Edit Config.php file and set value of your Apache server, database server, password etc.
-5. Restore Database file or Create Database using this Query. And Connect to youur API Config.
+5. Restore Database file or Create Database using this Query. And Connect to your API Config.
 
 ```
 CREATE TABLE `adbook` (
